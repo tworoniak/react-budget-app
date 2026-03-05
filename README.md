@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# 💸 React Budget Tracker
 
 ```txt
 

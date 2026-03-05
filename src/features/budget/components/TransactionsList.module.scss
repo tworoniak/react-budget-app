@@ -1,0 +1,100 @@
+@use '../../../styles/abstracts/tokens' as *;
+
+.empty {
+  color: $muted;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: $space-3;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $space-4;
+  padding: $space-3;
+  border: 1px solid $border;
+  border-radius: 14px;
+  background: rgba(17, 24, 39, 0.45);
+}
+
+.main {
+  display: grid;
+  gap: $space-1;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid $border;
+  color: $muted;
+
+  &[data-type='income'] {
+    border-color: rgba(34, 197, 94, 0.35);
+    color: rgba(134, 239, 172, 0.95);
+  }
+
+  &[data-type='expense'] {
+    border-color: rgba(248, 113, 113, 0.35);
+    color: rgba(254, 202, 202, 0.95);
+  }
+}
+
+.category {
+  font-weight: 600;
+}
+
+.date {
+  color: $muted;
+  font-size: 12px;
+}
+
+.note {
+  color: $muted;
+  font-size: 13px;
+}
+
+.right {
+  display: grid;
+  justify-items: end;
+  gap: $space-2;
+}
+
+.amount {
+  font-weight: 700;
+
+  &[data-type='income'] {
+    color: rgba(134, 239, 172, 0.95);
+  }
+
+  &[data-type='expense'] {
+    color: rgba(254, 202, 202, 0.95);
+  }
+}
+
+.delete {
+  background: transparent;
+  border: 1px solid $border;
+  color: $muted;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: $text;
+  }
+}

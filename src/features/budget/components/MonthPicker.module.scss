@@ -1,0 +1,19 @@
+@use '../../../styles/abstracts/tokens' as *;
+
+.wrap {
+  display: grid;
+  gap: $space-1;
+}
+
+.label {
+  font-size: 12px;
+  color: $muted;
+}
+
+.input {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid $border;
+  color: $text;
+  border-radius: 12px;
+  padding: 10px 12px;
+}

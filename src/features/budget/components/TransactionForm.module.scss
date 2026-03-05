@@ -1,0 +1,53 @@
+@use '../../../styles/abstracts/tokens' as *;
+
+.form {
+  display: grid;
+  gap: $space-4;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-3;
+
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: grid;
+  gap: $space-1;
+}
+
+.label {
+  font-size: 12px;
+  color: $muted;
+}
+
+.input {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid $border;
+  color: $text;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: $text;
+  background: rgba(59, 130, 246, 0.28);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(59, 130, 246, 0.36);
+  }
+}
+
+.error {
+  color: #fca5a5;
+  font-size: 13px;
+}

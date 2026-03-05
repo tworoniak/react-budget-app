@@ -1,0 +1,38 @@
+@use '../../../styles/abstracts/tokens' as *;
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $space-4;
+  margin-bottom: $space-5;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: $space-4;
+}
+
+.kicker {
+  font-size: 12px;
+  color: $muted;
+  margin-bottom: $space-2;
+}
+
+.value {
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.valueSmall {
+  font-size: 14px;
+}
+
+.muted {
+  color: $muted;
+}
